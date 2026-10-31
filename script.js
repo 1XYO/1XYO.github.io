@@ -40,7 +40,7 @@
     });
 
     document.documentElement.lang = isEn ? "en" : "zh-CN";
-    document.title = isEn ? "Fan Jinhao · XYO" : "范锦浩 · XYO";
+    document.title = isEn ? "Jinhao Fan · XYO" : "范锦浩 · XYO";
     langToggle.textContent = isEn ? "中" : "EN";
     langToggle.setAttribute("aria-label", isEn ? "切换到中文" : "Switch to English");
     localStorage.setItem("lang", lang);

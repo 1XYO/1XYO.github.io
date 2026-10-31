@@ -161,6 +161,45 @@ a {
   color: var(--muted);
 }
 
+/* ---------- 博客（PDF 列表） ---------- */
+.panel-empty {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.posts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.posts li + li {
+  border-top: 1px solid var(--line);
+}
+
+.post {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 0.85rem 0;
+}
+
+.post-title {
+  transition: opacity 0.2s ease;
+}
+
+.post:hover .post-title {
+  opacity: 0.55;
+}
+
+.post-date {
+  flex-shrink: 0;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
 /* ---------- 内容区 ---------- */
 .panel {
   display: none;
@@ -190,6 +229,11 @@ a {
 
   .nav {
     gap: 1.1rem;
+  }
+
+  .post {
+    flex-direction: column;
+    gap: 0.15rem;
   }
 }
 

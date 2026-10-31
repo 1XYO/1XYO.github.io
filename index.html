@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XYO</title>
+  <meta name="description" content="XYO 的个人主页 —— 设计、代码与一些想法。" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function () {
+      var saved = localStorage.getItem("theme");
+      if (saved) document.documentElement.setAttribute("data-theme", saved);
+    })();
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="brand" href="#top">XYO</a>
+      <button class="theme-toggle" type="button" aria-label="切换主题">
+        <span class="theme-icon">◐</span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <p class="eyebrow">你好，我是</p>
+        <h1>XYO</h1>
+        <p class="lede">独立开发者 / 设计爱好者。喜欢把复杂的事情做得简单一点。</p>
+        <p class="meta">中国 · 现居上海 · 可接受远程合作</p>
+      </section>
+
+      <section class="block">
+        <h2>关于</h2>
+        <p>
+          我做前端与产品设计，关注排版、性能与细节。日常写一点代码，
+          也写一点文字，偶尔拍照。相信好的界面应该是安静的。
+        </p>
+        <p>
+          目前在做一些独立小项目，也在寻找有趣的合作。如果你有想法，欢迎来信。
+        </p>
+      </section>
+
+      <section class="block">
+        <h2>作品</h2>
+        <ul class="list">
+          <li>
+            <a href="#" class="item">
+              <span class="item-title">Paper — 极简笔记</span>
+              <span class="item-desc">离线优先的纯文本笔记工具</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="item">
+              <span class="item-title">Grid — 排版实验</span>
+              <span class="item-desc">关于中文网页排版的练习集</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="item">
+              <span class="item-title">Quiet — 计时器</span>
+              <span class="item-desc">只有呼吸和倒计时的专注应用</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="block">
+        <h2>写作</h2>
+        <ul class="list">
+          <li>
+            <a href="#" class="item">
+              <span class="item-title">为什么我把博客做回了纯静态</span>
+              <span class="item-desc">2026-08-12</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="item">
+              <span class="item-title">中文排版的十个细节</span>
+              <span class="item-desc">2026-05-03</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="item">
+              <span class="item-title">做一个「够用」的产品</span>
+              <span class="item-desc">2026-02-19</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="block">
+        <h2>联系</h2>
+        <ul class="links">
+          <li><a href="mailto:hello@xyo.dev">hello@xyo.dev</a></li>
+          <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://x.com/" target="_blank" rel="noopener">X</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year">2026</span> XYO</p>
+      <p class="muted">用 HTML 与 CSS 写成</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
